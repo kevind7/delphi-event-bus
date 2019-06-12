@@ -134,6 +134,8 @@ begin
       begin
         ASubscription.SubscriberMethod.Method.Invoke(ASubscription.Subscriber,
           [AEvent]);
+      end else begin
+        AEvent.Free;
       end;
     end;
 end;
@@ -147,6 +149,8 @@ begin
       begin
         ASubscription.SubscriberMethod.Method.Invoke(ASubscription.Subscriber,
           [AEvent]);
+      end else begin
+        AEvent.Free;
       end;
     end;
 end;
